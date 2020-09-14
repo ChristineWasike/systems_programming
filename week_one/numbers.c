@@ -1,3 +1,17 @@
+/*
+Question One
+
+Write a C program that sums up the odd and even numbers, respectively, 
+from 1 to a given upper bound inclusive (taken as user input). 
+The program should then print out the sum of the odd numbers, the sum 
+of the even numbers, the absolute difference between the sums, 
+a third of the sum of the even numbers and a 5th of the sum of the odd 
+numbers. Additionally,if the input upper bound is 0 (zero), you can 
+give the user, additional chances to correct the upper bound to be 
+greater than or equal to 1, without exiting the program.  
+ [2 pts]
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,6 +24,7 @@ int main(int argc, char const *argv[])
 
     int oddSum = 0;
     int evenSum = 0;
+
     while (upperBound <= 0){
         printf("Please enter a value greater than 0: ");
         scanf("%d", &upperBound);
