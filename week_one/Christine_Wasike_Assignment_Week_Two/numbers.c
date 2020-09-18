@@ -15,8 +15,7 @@ greater than or equal to 1, without exiting the program.
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char const *argv[])
-{
+int main(){
     int upperBound;
     printf("Enter a number: ");
     scanf("%d", &upperBound);
