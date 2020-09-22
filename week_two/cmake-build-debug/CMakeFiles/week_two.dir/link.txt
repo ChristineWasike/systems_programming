@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/week_two.dir/question_1/question_1.c.o CMakeFiles/week_two.dir/question_2/question_2.c.o  -o week_two 
