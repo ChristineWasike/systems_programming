@@ -1,3 +1,0 @@
-/home/wasike/Desktop/cartoons/c_language/systems_programming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/wasike/Desktop/cartoons/c_language/systems_programming/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wasike/Desktop/cartoons/c_language/systems_programming/cmake-build-debug/CMakeFiles/systems_programming.dir
