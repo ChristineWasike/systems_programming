@@ -2,9 +2,8 @@
 
 int main(){
    // Declaring a variable to store the number(input) from the user
-   int number;
-   do
-   {
+   int number = 0;
+   do{
        printf("Enter a positive number:");
        //Storing the user input
        scanf("%d", &number);
@@ -14,9 +13,7 @@ int main(){
    int factorial = 1;
 
    // Iterating through the number down to 1
-   for (int i = number; i > 1; i--)
-   {
-
+   for (int i = number; i > 1; i--){
        // Multiplying the factorial by preceeding integers
        factorial *= i;
    }

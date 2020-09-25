@@ -12,17 +12,41 @@ word is capitalized. [2 pts]*/
 // 
 
 #include <stdio.h>
+#include <string.h>
 
-const char* capitalize(){
-    return "Hello";
+void capitalize(char userString[50]){
+
+    // Looping through the string
+    for (int i = 0; i < strlen(userString); i++){
+        // Converting the first letter of the first word to an uppercase letter
+        if(i == 0){
+            userString[i] = userString[i] - 32;
+
+        // Converting the leter that preceeds each space to a capital letter
+        }else if (userString[i] == ' '){
+            userString[i + 1] = userString[i +1] - 32;
+        } 
+        
+    }
+
+    // Printing the resulting
+    printf("Here is your transformed string: \n%s \n", userString);
+    
 }
 
-int main(){
-    int a = 0;
-    printf("Something here %d \n", a);
+void main(){
 
-    printf("%s \n",capitalize());
-    return 0;
+    // Declaring a character array/ string with room for 50 characters
+    char userString[50];
+
+    // Prompting the user for a string
+    printf("Enter a string of your choice: \n");
+
+    // Storing the user's string in the declared string above
+    scanf("%[^\n]",userString);
+
+    // calling the capitalize function
+    capitalize(userString);
 }
 
 
