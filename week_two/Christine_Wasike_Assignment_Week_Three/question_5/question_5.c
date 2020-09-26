@@ -6,11 +6,10 @@ Write a C program to print the following diamond
 3   * * *
 4  * * * *
 5 * * * * *
-5 * * * * *
 4  * * * *
 3   * * *
 2    * *
-1    
+1     *
 */
 
 #include <stdio.h>
