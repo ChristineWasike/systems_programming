@@ -20,7 +20,7 @@ Eg : congratulations , you made 5 guesses.
 void main(){
     // Initialize random number
     int randomNumber = rand() % 50;
-    // printf("The random number is: %d \n", randomNumber);
+
     // Initialize variable to store the user's number
     int userInput;
 
@@ -35,18 +35,21 @@ void main(){
         printf("You guesssed: %d \n", userInput);
 
         int difference = randomNumber - userInput;
+
+        //A check for the right number
         if (difference == 0){
             if (attempts == 1){
                 printf("That's the right guess. You attempted this question once.\n");
             } else{
                 printf("That's the right guess. You attempted this question %d times.\n", attempts);
             }
-            
-            
             break;
+
+           // A check for inputing a lower number 
         } else if( difference > 0){
             printf("Your guess is less than my number. \n");
-
+            
+            // A check for inputing a higher number
         } else {
             printf("Your guess is greater than my number. \n");
         }
